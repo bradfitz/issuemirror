@@ -57,7 +57,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	destRoot := p.Dir
+	destRoot := filepath.Join(p.Dir, "_data")
 
 	root := issuemirror.Root(destRoot)
 	page := 1
